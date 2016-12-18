@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "textlint": "textlint -f pretty-error docs/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
