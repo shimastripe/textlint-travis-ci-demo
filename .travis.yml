@@ -1,5 +1,12 @@
 sudo: false
 language: node_js
-node_js: "stable"
+node_js: stable
 script:
-  - npm run textlint
+- npm run textlint
+notifications:
+  email: false
+  webhooks:
+    urls:
+      - secure: "e5QH4ghVJ5IZAx7Ww+EcKyz6vpHQWW3f/+tVSdZw8OKIgDEHt1f8ZDsfn0a2lls/03IbPYCVvDWcJ6VIVXHAivtI227fmXKN3xALTY06+5Mv06m2PusiLnGTHD4bXPlGecXz6ZbUxDF2RiI+XvWW0gST9J/RskhqqpbFC4Q5Q/CH4EAn4EuIzwM0MHCdfRO9jyUjcspHtdy4DZgl9ZZvjIy7O7+e7sLNYFHkYUBtBssKD38YvpXRp/ysp/Ntz5q7AGbFyTQ3atb+wnDsUOh7OakK/lZglUP/U1X0391f07MlKMgLC8ml6zrwse7i1gJ8gYpgzEnbSpl0oKnrWXba33USAEGsNeTlHdWKZInXwwIAuXQZMw3RbPDKw2WIJUZLfW4oI7vx679cR5ywl4ggwSW/T0bLAPm+sug3NbOc+lRNqMyRzwZTl8ULefwlEx37VzEz26WGdxXh6BoMZMZfZVmkS6GRNsK+KfRJkWRJaE4MjoU2pVulc0Rn6r17i+y+Ic27W7e41pPVkREzBTXSqcmAghmkQ9h6kLfQjYV3oOisY/GsttAURskpUdmnYvlN9wV00KcwHCd3KBws5K1Myl5IINKXF/ULkLl6dtvWXzZK/hstgioBX+P9i+MmkBjhnlOVFvpy6Y/BHIRCF4pUIXxDxY56u0W8wc6zLBP8TSM="
+    on_success: always
+    on_failure: always
